@@ -1,0 +1,21 @@
+<div class="genie-box col-xs-6 col-xs-offset-3 text-center ">
+
+<h2>  
+	Upload your images here
+</h2>
+
+
+<br/>
+
+<%= simple_form_for @post do |f| %>
+	<%= f.input :title, label: 'Image title',
+	placeholder: 'Enter text here' %>
+	<br/>
+	<%= f.input :description, label: 'Image description',
+	placeholder: 'Enter text here' %>
+	<br/>
+	<%= f.button :submit, :class => 'btn btn-warning' %>
+	<br/>
+<% end %>
+
+</div>
